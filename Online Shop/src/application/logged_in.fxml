@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="principal_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#close_account" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoggedInController">
+   <children>
+      <Button fx:id="btn_refresh" layoutX="243.0" layoutY="43.0" mnemonicParsing="false" onAction="#show_product" style="-fx-cursor: hand;" text="SHOW PRODUCTS" />
+      <Button fx:id="btn_account" layoutX="527.0" layoutY="30.0" mnemonicParsing="false" onAction="#open_account" style="-fx-cursor: hand;" text="account" />
+      <TableView fx:id="tableView" layoutX="128.0" layoutY="100.0" onMouseClicked="#rowsclicked" prefHeight="200.0" prefWidth="344.0">
+        <columns>
+          <TableColumn fx:id="NameColumn" prefWidth="102.4000244140625" text="NAME" />
+          <TableColumn fx:id="IdColumn" prefWidth="58.39996337890625" text="ID" />
+            <TableColumn fx:id="QuantityColumn" minWidth="0.0" prefWidth="93.5999755859375" text="QUANTITY" />
+            <TableColumn fx:id="PriceColumn" prefWidth="98.4000244140625" text="PRICE" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txt_name" layoutX="67.0" layoutY="330.0" prefHeight="26.0" prefWidth="100.0" promptText="NAME" />
+      <TextField fx:id="txt_id" layoutX="167.0" layoutY="330.0" prefHeight="26.0" prefWidth="100.0" promptText="ID" />
+      <TextField fx:id="txt_quantity" layoutX="267.0" layoutY="330.0" prefHeight="26.0" prefWidth="100.0" promptText="QUANTITY" />
+      <TextField fx:id="txt_price" layoutX="367.0" layoutY="330.0" prefHeight="26.0" prefWidth="100.0" promptText="PRICE" />
+      <Button fx:id="btn_add" layoutX="488.0" layoutY="330.0" mnemonicParsing="false" onAction="#add_products" text="ADD" />
+      <AnchorPane fx:id="slide_pane" layoutX="600.0" prefHeight="400.0" prefWidth="200.0" style="-fx-background-color: blue;">
+         <children>
+            <Button fx:id="btn_log_out" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#log_out" style="-fx-cursor: hand;" text="log out" />
+            <Button fx:id="btn_close" layoutX="134.0" layoutY="361.0" mnemonicParsing="false" onAction="#close" style="-fx-cursor: hand;" text="close" />
+            <Button fx:id="btn_my_orders" layoutX="64.0" layoutY="211.0" mnemonicParsing="false" onAction="#open_my_orders" style="-fx-cursor: hand;" text="my orders" />
+            <Button fx:id="btn_shopping_list" layoutX="56.0" layoutY="162.0" mnemonicParsing="false" onAction="#open_shopping_list" style="-fx-cursor: hand;" text="shopping list" />
+            <Text fx:id="txt_account" layoutX="33.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="131.1999633789062" />
+         </children>
+      </AnchorPane>
+      <Spinner fx:id="spinner_num" layoutX="32.0" layoutY="187.0" prefHeight="26.0" prefWidth="70.0" />
+      <Button fx:id="btn_addtolist" layoutX="17.0" layoutY="223.0" mnemonicParsing="false" onAction="#addtoshoplist" prefHeight="26.0" prefWidth="100.0" text="ADD TO SHOP" />
+   </children>
+</AnchorPane>

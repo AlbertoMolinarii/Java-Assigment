@@ -1,0 +1,21 @@
+Alberto Molinari 330698
+Luca Foramacchi 333060
+We used the Model-View-Controller architecture.
+At the begginning you have to insert your credentials if you have them (the standars are "user, password" for the normal user and "admin, password"
+for the admin). If you insert the correct credentials you will go to page2, otherwise you can create a new user by clicking the button "register now" and
+you will go to newuserpage where you will insert all the information for the new account.
+When you go to page2, you can see a tableview with the list of the watches presented in the shop. If you click on one (in the case of user) 
+you will go in the page3 where you can see all the information of the watch selected and also you can buy it. In the case of admin
+you will go in page6, after clicking on a watch in the table, where you can see the same information but instead of buying the watch, you
+can modify the information and you will go to page5.
+If you are a user, from page3, you can click on buy to actually buy the watch and you will go to refillpage where you can insert the information
+of you card to perform the purchase.
+When your purchase is completed you can visualize the watches that you have in the page4 "My collection" where you can also see the total price
+of your watches.
+If you are an admin, in the side pane clicking "account" on the right, you can add a new watch clicking on the button. You will go in 
+addwatchpage and you have to insert the information about the new watch, like brand and model. To insert the image, you have to insert the name
+of the file .jpg and insert the image in the folder of the project. 
+The new user and the new watch will be inserted in the database.
+When you buy a watch, the attribute "possessed" in the database "watch" will be set with the name of the user that buy the watch.
+If you go to My collection after log in with the same user, you can see the watches that you have without have to buy the watch, you can 
+see the watches that you bought in the past simply in My collections.

@@ -1,0 +1,8 @@
+Description file for FXnegozio_online.
+The application will start after you run first the ObjectServer and then the Main file.
+Then you have to login with your credentials(Es. Username: luca, password: luca is already in the server user's list), if you don't have an account you can do it with the sign up button.
+In all pages there's an account's menu that will slide in your page after the click on the account's button.
+With this menu you may access to different pages, with the button my orders you will see your old purchases, with the shpping list button you will see your shopping cart, with log out button you will log out from your account and with the close button you will close the application. 
+After the login you will see the logged in page where you can see in table all the available product; for adding a new product you can write all the information in the field below the table and then press add and it will appear in the table if it's a new item, if your product is already in the server, the table will not update.
+If you want to buy some product you have to add them to the shopping list, to do that you have to click on the product you want then with the spinner on the left you can choose the product's quantity. When you press "add to shop" you will be automatically directed to shopping list.
+For effectively buy something you have to do the check out from the shopping cart with the button buy.

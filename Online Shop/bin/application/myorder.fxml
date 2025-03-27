@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MyOrderController">
+   <children>
+      <TableView fx:id="table_view" layoutX="148.0" layoutY="100.0" onMouseClicked="#rowsclicked" prefHeight="200.0" prefWidth="304.0">
+        <columns>
+          <TableColumn fx:id="nome" prefWidth="75.0" text="nome" />
+          <TableColumn fx:id="id" prefWidth="75.0" text="id" />
+            <TableColumn fx:id="quantità" prefWidth="75.0" text="quantita" />
+            <TableColumn fx:id="prezzo" prefWidth="75.0" text="prezzo" />
+        </columns>
+      </TableView>
+      <AnchorPane fx:id="slide_pane" layoutX="600.0" prefHeight="400.0" prefWidth="200.0" style="-fx-background-color: blue;">
+         <children>
+            <Text fx:id="txt_account" layoutX="89.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+            <Button fx:id="btn_shopping_list" layoutX="63.0" layoutY="159.0" mnemonicParsing="false" onAction="#open_shopping_list" text="view product" />
+            <Button fx:id="btn_log_out" layoutX="24.0" layoutY="335.0" mnemonicParsing="false" onAction="#log_out" text="log out" />
+            <Button fx:id="btn_close" layoutX="106.0" layoutY="335.0" mnemonicParsing="false" onAction="#close" text="close" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="btn_account" layoutX="495.0" layoutY="41.0" mnemonicParsing="false" onAction="#open_account" text="account" />
+      <Spinner fx:id="spinner_num" layoutX="39.0" layoutY="161.0" prefHeight="26.0" prefWidth="76.0" />
+      <Button fx:id="btn_refund" layoutX="51.0" layoutY="200.0" mnemonicParsing="false" onAction="#refund" text="refund" />
+   </children>
+</AnchorPane>

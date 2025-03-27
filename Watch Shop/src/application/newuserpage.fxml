@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FBCEB1;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.WatchShopView">
+   <children>
+      <TextField fx:id="txt_newuname" layoutX="223.0" layoutY="125.0" promptText="Name">
+         <font>
+            <Font name="Bodoni MT Italic" size="12.0" />
+         </font></TextField>
+      <TextField fx:id="txt_newusurname" layoutX="223.0" layoutY="176.0" promptText="Surname">
+         <font>
+            <Font name="Bodoni MT Italic" size="12.0" />
+         </font></TextField>
+      <TextField fx:id="txt_newuaddress" layoutX="223.0" layoutY="232.0" promptText="E-mail">
+         <font>
+            <Font name="Bodoni MT Italic" size="12.0" />
+         </font></TextField>
+      <TextField fx:id="txt_newupassword" layoutX="223.0" layoutY="287.0" promptText="Password">
+         <font>
+            <Font name="Bodoni MT Italic" size="12.0" />
+         </font></TextField>
+      <Button fx:id="btn_adduser" layoutX="266.0" layoutY="336.0" mnemonicParsing="false" onAction="#newuser" style="-fx-background-color: transparent;" text="Add me" underline="true">
+         <font>
+            <Font name="Bodoni MT Italic" size="15.0" />
+         </font></Button>
+      <Label layoutX="199.0" layoutY="51.0" text="Create account">
+         <font>
+            <Font name="Bodoni MT Italic" size="35.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
